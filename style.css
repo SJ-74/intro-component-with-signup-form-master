@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+}
+
+body{
+    min-height : 100vh;
+    font-family : 'Poppins', sans-serif;
+    color : #fff;
+    text-align : center;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/bg-intro-mobile.png"), hsl(0, 100%, 74%);
+}
+
+a{
+    text-decoration : none;
+}
+
+.container{
+    max-width : 87%;
+}
+
+.title{
+    font-size : 1.75rem;
+    padding-inline : 2rem;
+    
+}
+
+.info{
+    font-weight : 500;
+    margin-block : 1.5em 4em;
+}
+
+.message{
+    font-weight : 600;
+    font-size : 1rem;
+    background-color : hsl(248, 32%, 49%);
+    border-radius : 10px;
+    padding : 1rem 3rem;
+    margin-bottom : 1.5em;
+    filter: drop-shadow(1px 10px 10px #0000002c);
+}
+
+.message--light{
+    font-weight : 400;
+}
+
+.form{
+    background-color : white;
+    padding : 2em;
+    border-radius : 10px;
+}
+
+input{
+    display : block;
+    width : 100%;
+    padding : 1.5em;
+    margin-block : 1em;
+    border : 1px solid hsl(246, 25%, 77%);
+    border-radius : 5px;
+}
+
+::placeholder{
+    font-family: 'Poppins', sans-serif;
+    font-weight : 700;
+}
+
+input[type=submit]{
+    border : none;
+    background : hsl(154, 59%, 51%);
+    color : #fff;
+    font-weight : 600;
+    text-transform: uppercase;
+    box-shadow : 0 5px 0 -1px hsl(154, 56%, 41%);
+}
+
+.agreement{
+    color : hsl(246, 25%, 77%);
+    font-weight : 500;
+    font-size : 0.75rem;
+}
+
+.tas{
+    color : hsl(0, 100%, 74%);
+    font-weight: 700;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media(min-width : 768px){
+    body{
+        background :no-repeat url('../images/bg-intro-desktop.png'), hsl(0, 100%, 74%);
+        text-align : unset;
+    }
+
+    .container{
+        max-width : 78%;
+        display : flex;
+        flex-direction : row;
+        justify-content: space-between;
+        align-items : center;
+    }
+
+    .description{
+        max-width : 50%;
+        padding-right : 1.5em;
+    }
+
+    .right{
+        min-width : 50%;
+        height : 560px;
+        text-align : center;
+    }
+
+    .title{
+        font-size : 2.5rem;
+        padding : unset;
+    }
+
+    .form{
+        height : 475px;
+    }
+
+    input:focus{
+        border-color : hsl(248, 32%, 49%);
+    }
+
+    input[type=submit]:hover{
+        cursor: pointer;
+    }
+}
